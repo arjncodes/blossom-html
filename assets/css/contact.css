@@ -1,0 +1,592 @@
+
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-header p {
+    color: var(--dark-blue);
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+#contact-section-title{
+    color: var(--white);
+}
+#contact-section-paragraph{
+    color: var(--white);
+}
+
+/* WhatsApp Message Section */
+.whatsapp-section {
+    padding: 80px 0;
+    background-color: var(--light-text);
+}
+
+.whatsapp-container {
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+}
+
+.whatsapp-icon {
+    font-size: 4rem;
+    color: #25D366;
+    margin-bottom: 20px;
+}
+
+.whatsapp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group.full-width {
+    flex: 0 0 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+.form-group textarea:focus,
+.form-group input:focus {
+    outline: none;
+    border-color: #25D366;
+    box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.2);
+    transition: all 0.3s ease; /* Smooth transition for the focus effect */
+}
+
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+
+/* WhatsApp button - span both columns */
+.btn-whatsapp-send {
+    width: 100%;
+    padding: 14px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-whatsapp-send i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.btn-whatsapp-send:hover {
+    background-color: #128C7E;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-note {
+    margin-top: 20px;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* -------------------
+--------------Combined Section Styling---------------------- */
+
+
+.combined-contact-section {
+    padding: 60px 0;
+    background-color: var(--dark-blue);
+}
+
+
+.combined-contact-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+.map-column {
+    flex: 1.5;
+    min-width: 300px;
+}
+
+/* Contact Cards Styling */
+.contact-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-info-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    color: white;
+    font-size: 1.5rem;
+}
+
+.contact-info-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--dark-blue);
+    text-align: center;
+}
+
+.contact-info-card p {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+.contact-info-card a{
+    color: var(--dark-blue);
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Map Styling */
+.map-container {
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    border: none;
+}
+
+/* Button Styling */
+.contact-btn, .map-btn {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.contact-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.contact-btn:hover {
+    background-color: var(--accent-color);
+}
+
+.map-btn {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.map-btn:hover {
+    background-color: var(--accent-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .combined-contact-container {
+        flex-direction: column;
+    }
+    
+    .map-container {
+        min-height: 400px;
+    }
+    
+    .contact-column {
+        order: 2;
+    }
+    
+    .map-column {
+        order: 1;
+    }
+}
+
+
+/* Updated CSS for perfect button alignment */
+.quick-contact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.contact-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 380px; /* Set a minimum height for all cards */
+}
+
+.card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-wrapper {
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+.contact-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--primary);
+    transition: all 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card:hover:before {
+    height: 10px;
+    background-color: var(--accent-color);
+}
+
+.contact-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--dark-blue);
+    transition: all 0.3s;
+}
+
+.contact-card:hover .contact-icon-wrapper {
+    background-color: var(--accent-color);
+    transform: rotate(15deg) scale(1.1);
+}
+
+.contact-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--dark-blue);
+}
+
+.contact-card p {
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.contact-card a {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px 0;
+    background-color: var(--primary);
+    color: var(--white) !important;
+    border: 2px solid var(--primary);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 12px rgba(44, 95, 45, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-card a:hover {
+    background-color: transparent;
+    color: var(--primary) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(44, 95, 45, 0.3);
+}
+
+/* Optional: Add a pseudo-element for fancy hover effect */
+.contact-card a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: -1;
+}
+
+.contact-card a:hover::after {
+    transform: translateY(0);
+}
+
+
+
+/* Business Hours Section */
+.hours-section {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.hours-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hours-image {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.hours-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hours-content {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.hours-content h2 {
+    font-size: 2.5rem;
+    color: var(--dark-blue);
+    margin-bottom: 1.5rem;
+}
+.hours-content p{
+    color: var(--text-color);
+}
+
+.hours-list {
+    list-style: none;
+    padding: 0;
+}
+
+.hours-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.hours-list li:last-child {
+    border-bottom: none;
+}
+
+.day {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.time {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.highlight-day {
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+/* This targets ONLY .time elements that are siblings of .highlight-day */
+.highlight-day ~ .time {
+    color: var(--secondary);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .hours-container {
+        flex-direction: column;
+    }
+    
+    .contact-card {
+        padding: 25px 15px;
+    }
+}
+
+
+
+/* Social Connections Section */
+.social-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    background-color: var(--light-color);
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.social-button:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.social-button i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.social-button span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.social-button.facebook i { color: #3b5998; }
+.social-button.instagram i { 
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.social-button.youtube i { color: #FF0000; }
+.social-button.linkedin i { color: #0077B5; }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .whatsapp-container {
+        padding: 30px 20px;
+    }
+    
+    .map-container {
+        height: 350px;
+    }
+    
+    .social-button {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .social-button i {
+        font-size: 2.5rem;
+    }
+}

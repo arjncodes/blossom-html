@@ -1,0 +1,200 @@
+/* Admission Procedure Section */
+.admission-procedure {
+    background: var(--light-blue);
+    padding: 5rem 0;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.admission-procedure:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.admission-procedure .section-title {
+    color: var(--dark-blue);
+}
+
+.admission-procedure .section-desc {
+    font-size: 1.2rem;
+    color: var(--text);
+    margin-bottom: 2rem;
+}
+
+.admission-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+}
+
+.admission-steps li {
+    font-size: 1.1rem;
+    color: var(--text);
+    background: var(--cream);
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    max-width: 600px;
+    transition: all 0.3s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+.admission-steps li:hover {
+    background: var(--complementary);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+.admission-steps li i {
+    color: var(--secondary);
+    font-size: 1.3rem;
+}
+
+/* Apply Online Form */
+.admission-form {
+    background: var(--light-grey);
+    padding: 5rem 0;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.admission-form .section-title {
+    color: var(--dark-blue);
+}
+
+.admission-form .section-desc {
+    font-size: 1.2rem;
+    color: var(--text);
+    margin-bottom: 2rem;
+}
+
+.google-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.google-form-container iframe {
+    width: 100%;
+    height: 800px;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .admission-steps li {
+        width: 95%;
+        font-size: 1rem;
+    }
+
+    .admission-procedure,
+    .admission-form {
+        padding: 3rem 0;
+    }
+}
+
+
+/* Admission Form Styling */
+.custom-form {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.form-heading {
+    color: var(--dark-blue);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Two fields in one row */
+.form-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Form Group */
+.form-group {
+    flex: 1;
+    margin-bottom: 0.8rem;
+    min-width: 250px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Inputs, Select & Textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: 0.3s ease-in-out;
+    background-color: #f9f9f9;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #0b6623;
+    outline: none;
+    box-shadow: 0 0 5px rgba(11, 102, 35, 0.3);
+    background-color: #ffffff;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #d32f2f;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: #b71c1c;
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(183, 28, 28, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .form-group {
+        min-width: unset;
+    }
+}

@@ -1,0 +1,466 @@
+/* Career Section Styles */
+.career-section {
+    padding: 80px 0;
+    background-color: var(--light-grey);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Career Introduction */
+.career-intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.career-intro h2 {
+    font-size: 36px;
+    color: var(--secondary);
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.career-intro h2:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--accent);
+    margin: 15px auto 0;
+}
+
+.career-intro p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text);
+    max-width: 900px;
+    margin: 0 auto 20px;
+}
+
+/* Why Join Us Section */
+.why-join-us {
+    margin-bottom: 60px;
+}
+
+.why-join-us h3 {
+    font-size: 28px;
+    color: var(--dark-blue);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.benefit-card {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.benefit-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--light-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.benefit-icon i {
+    font-size: 28px;
+    color: var(--dark-blue);
+}
+
+.benefit-card h4 {
+    font-size: 20px;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+}
+
+.benefit-card p {
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Current Openings */
+.current-openings {
+    margin-bottom: 60px;
+}
+
+.current-openings h3 {
+    font-size: 28px;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.openings-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.opening-card {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-top: 4px solid var(--primary);
+    transition: transform 0.3s ease;
+}
+
+.opening-card:hover {
+    transform: translateY(-8px);
+}
+
+.opening-card h4 {
+    font-size: 20px;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.opening-details {
+    color: var(--accent);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.opening-details i {
+    margin-right: 5px;
+}
+
+.opening-card p {
+    font-size: 14px;
+    color: var(--text);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.apply-now-btn {
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.apply-now-btn:hover {
+    background-color: var(--accent);
+    transform: scale(1.05);
+}
+
+/* Teacher Testimonials */
+.teacher-testimonials {
+    margin-bottom: 60px;
+}
+
+.teacher-testimonials h3 {
+    font-size: 28px;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonials-slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.testimonial-content {
+    padding: 30px;
+    position: relative;
+}
+
+.testimonial-content i {
+    font-size: 30px;
+    color: var(--complementary);
+    opacity: 0.3;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.testimonial-content p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--text);
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    padding-left: 15px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.author-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 3px solid var(--complementary);
+}
+
+.author-info h4 {
+    font-size: 18px;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.author-info p {
+    font-size: 14px;
+    color: var(--accent);
+    margin: 0;
+}
+
+/* Application Form */
+.application-form {
+    background: var(--white);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 60px;
+}
+
+.application-form h3 {
+    font-size: 28px;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.application-form > p {
+    text-align: center;
+    color: var(--text);
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.required {
+    color: var(--secondary);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+input[type="file"] {
+    padding: 10px 0;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+}
+
+.checkbox-group a {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.submit-btn {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    flex: 1;
+    transition: all 0.3s ease;
+}
+
+.reset-btn {
+    background-color: #f0f0f0;
+    color: var(--text);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--accent);
+    transform: scale(1.05);
+}
+
+.reset-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* FAQ Section */
+.faq-section {
+    margin-bottom: 40px;
+}
+
+.faq-section h3 {
+    font-size: 28px;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: var(--white);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+}
+
+.faq-question {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: var(--light-grey);
+}
+
+.faq-question h4 {
+    font-size: 17px;
+    color: var(--primary);
+    margin: 0;
+}
+
+.faq-question i {
+    color: var(--accent);
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    padding: 0 20px 20px;
+    max-height: 1000px;
+}
+
+.faq-answer p {
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .benefits-container,
+    .openings-container,
+    .testimonials-slider {
+        grid-template-columns: 1fr;
+    }
+    
+    .application-form {
+        padding: 30px 20px;
+    }
+}
