@@ -226,13 +226,21 @@
 }
 
 .author-image {
-    width: 60px;
-    height: 60px;
+    width: 65px; /* Slightly larger for better visibility */
+    height: 65px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 15px;
     border: 3px solid var(--complementary);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
+
+.author-image:hover {
+    transform: scale(1.05); /* Slightly enlarges on hover for interactivity */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 
 .author-info h4 {
     font-size: 18px;
